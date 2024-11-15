@@ -16,8 +16,26 @@ const TextVideo: React.FC = () => {
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={6}>
             <TextContainer>
-              <TextTitle variant="h3">Most important</TextTitle>
-              <TextTitle variant="h3">title on the page</TextTitle>
+              <TextTitle
+                variant="h3"
+                sx={{
+                  fontWeight: "bold",
+                  fontFamily: "Inter",
+                  fontSize: "48px",
+                }}
+              >
+                Most important
+              </TextTitle>
+              <TextTitle
+                variant="h3"
+                sx={{
+                  fontWeight: "bold",
+                  fontFamily: "Inter",
+                  fontSize: "48px",
+                }}
+              >
+                title on the page
+              </TextTitle>
               <TextSubtitle variant="body1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 mattis, leo et condimentum ultricies, sem urna convallis metus,

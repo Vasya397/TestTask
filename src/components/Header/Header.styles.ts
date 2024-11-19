@@ -13,8 +13,16 @@ export const StyledAppBar = styled(AppBar)`
 
 export const CompanyName = styled(Typography)`
   flex-grow: 1;
+  font-size: 24px;
   font-weight: bold !important;
   font-family: "Inter" !important;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    color: blue;
+  }
 `;
 
 export const ButtonContainer = styled.div`

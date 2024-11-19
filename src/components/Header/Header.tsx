@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <StyledAppBar position="sticky">
       <Container maxWidth="lg">
         <Toolbar>
-          <CompanyName variant="h6" color="black">
+          <CompanyName variant="h6" as={Link} to="/">
             Some Company
           </CompanyName>
           <ButtonContainer>

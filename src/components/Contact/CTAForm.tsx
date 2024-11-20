@@ -9,15 +9,19 @@ interface IFormInput {
   message: string;
 }
 
-const ContactForm: React.FC = () => {
+interface ContactFormProps {
+  onSubmit: (data: { name: string }) => void;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log(data);
+  const handleFormSubmit: SubmitHandler<IFormInput> = (data) => {
+    onSubmit({ name: data.name });
   };
 
   return (

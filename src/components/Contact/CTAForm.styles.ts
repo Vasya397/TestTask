@@ -1,4 +1,4 @@
-import { color, SxProps, Theme } from "@mui/system";
+import { SxProps, Theme } from "@mui/system";
 
 export const formStyles = {
   container: {
